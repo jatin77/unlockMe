@@ -1,0 +1,329 @@
+$primary-orange: #ff8842;
+.orange_site-text {
+  color: $primary-orange !important;
+}
+.orange_site-bg {
+  background: $primary-orange !important;
+}
+.facebook-blue {
+  background: linear-gradient(120deg, #3b5998, #ffffff);
+}
+.google-multi {
+  background: linear-gradient(-120deg, #4285f4, #34a853, #fbbc05, #ea4335);
+}
+.heading_text {
+  @media (max-width: 600px) {
+    font-size: 2.5rem;
+  }
+}
+.block_el {
+  display: block;
+}
+.footer_above .row {
+  padding: 0 1rem;
+  display: grid;
+  // align-items: center;
+
+  grid-template-areas: "col1 col2 col3 col4";
+  .footer-col4 {
+    justify-self: end;
+    text-align: right;
+    border-left: 1px solid grey;
+    padding-left: 4rem;
+    @media (max-width: 768px) {
+      justify-self: center;
+      text-align: center;
+      border: none;
+      padding: 0;
+    }
+  }
+  @media (max-width: 768px) {
+    grid-template-areas:
+      "col1 col2 col3"
+      ". col4 .";
+
+    // align-items: center;
+    justify-items: center;
+  }
+}
+.footer-col1 {
+  grid-area: col1;
+}
+.footer-col2 {
+  grid-area: col2;
+}
+.footer-col3 {
+  grid-area: col3;
+}
+.footer-col4 {
+  grid-area: col4;
+}
+.footer-copyright {
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img {
+      width: 100px;
+      margin-left: 0.5rem;
+    }
+  }
+}
+// modal
+
+.modal-use-acc-txt {
+  margin-top: 0 !important;
+}
+.modal-social-links {
+  margin-bottom: 0 !important;
+}
+
+/* label color */
+.input-field label {
+  color: #999999 !important;
+}
+/* label focus color */
+.input-field input[type="email"]:focus + label,
+.input-field input[type="password"]:focus + label {
+  color: #fff !important;
+}
+/* label underline focus color */
+.input-field input[type="email"]:focus,
+.input-field input[type="password"]:focus {
+  border-bottom: 1px solid #fff !important;
+  box-shadow: 0 1px 0 0 #000;
+}
+.input-field input[type="email"],
+.input-field input[type="password"] {
+  border-bottom: 1px solid #7f7f7f !important;
+  box-shadow: 0 1px 0 0 #000;
+}
+.input-field .prefix {
+  color: #999999 !important;
+}
+
+/* icon prefix focus color */
+.input-field .prefix.active {
+  color: #fff !important;
+}
+.modal-forgot {
+  margin: 0 !important;
+}
+//works home
+.works_how-box {
+  display: grid;
+  grid-gap: 2rem;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: 1fr 1fr;
+  @media (max-width: 600px) {
+    grid-template-columns: 1fr;
+    grid-gap: 1rem;
+  }
+  &-img {
+    img {
+      width: 100%;
+    }
+  }
+}
+.brand-logo {
+  img {
+    margin-top: 7.5px;
+
+    @media (max-width: 600px) {
+      margin-top: 4px;
+    }
+  }
+}
+.about_card_content-head {
+  @media (max-width: 600px) {
+    img {
+      width: 50px;
+    }
+  }
+}
+//active links
+.nav_active {
+  background: rgba(0, 0, 0, 0.1);
+}
+.nav_active-sub {
+  background: rgba(0, 0, 0, 0.1);
+  color: $primary-orange !important;
+}
+.nav-wrapper {
+  @media (min-width: 600px) {
+    padding: 0 1rem;
+  }
+}
+//works how
+.section_worksHow {
+  .heading_text {
+    margin-bottom: 3rem;
+  }
+}
+//parallax
+.parallax {
+  position: relative;
+}
+.parallax-text {
+  width: 600px;
+  max-width: 80%;
+  margin: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+//about
+.about_card_content-head {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.section-aboutTeam {
+  .heading_text {
+    margin-top: 0;
+  }
+  .team_member-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 2rem;
+    @media (max-width: 600px) {
+      grid-template-columns: 1fr;
+      grid-gap: 1rem;
+    }
+  }
+  .team_member {
+    padding: 1rem;
+    display: flex;
+
+    align-items: center;
+    @media (max-width: 600px) {
+      padding: 0.5rem;
+    }
+    &-img {
+      margin-right: 1rem;
+      img {
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+      }
+    }
+    &-about {
+      p {
+        margin: 0;
+      }
+    }
+  }
+}
+//career
+.career-benefits {
+  ul {
+    li {
+      @media (max-width: 600px) {
+        font-size: 0.9rem;
+      }
+    }
+  }
+}
+//executive timeline
+
+.timeline {
+  position: relative;
+  .timeline-event {
+    position: relative;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    .timeline-content {
+      position: relative;
+      width: calc(50% - 50px);
+    }
+    &::before {
+      display: block;
+      content: "";
+      width: 2px;
+      height: calc(50% - 30px);
+      position: absolute;
+      background: #d2d2d2;
+      left: calc(50% - 1px);
+      top: 0;
+    }
+    &::after {
+      display: block;
+      content: "";
+      width: 2px;
+      height: calc(50% - 30px);
+      position: absolute;
+      background: #d2d2d2;
+      left: calc(50% - 1px);
+      top: calc(50% + 30px);
+    }
+    &:first-child::before,
+    &:last-child::after {
+      display: none;
+    }
+    &:nth-child(even) .timeline-content {
+      margin-left: calc(50% + 50px);
+    }
+    &:nth-child(odd) .timeline-content {
+      margin-left: 0;
+    }
+  }
+  .timeline-badge {
+    display: block;
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    background: #d2d2d2;
+    top: calc(50% - 8px);
+    right: calc(50% - 8px);
+    border-radius: 50%;
+    text-align: center;
+    cursor: default;
+    i {
+      font-size: 25px;
+      line-height: 40px;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .timeline {
+    .timeline-event {
+      .timeline-content {
+        width: calc(100% - 70px);
+      }
+      &::before,
+      &::after {
+        left: 19px;
+      }
+      &:nth-child(even) .timeline-content,
+      &:nth-child(odd) .timeline-content {
+        margin-left: 70px;
+      }
+    }
+    .timeline-badge {
+      left: 12px;
+    }
+  }
+}
+
+.card-title {
+  // font-weight: 600!important;
+  line-height: 1em;
+  &.gradient {
+    display: block;
+    position: absolute;
+    bottom: 0px;
+    padding-bottom: 64px;
+    display: block;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0);
+    background: linear-gradient(
+      to bottom,
+      rgba(125, 185, 232, 0) 0%,
+      rgba(0, 0, 0, 0.4) 50%,
+      rgba(0, 0, 0, 0.8) 100%
+    );
+  }
+}
