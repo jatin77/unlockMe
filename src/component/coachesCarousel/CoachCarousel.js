@@ -21,7 +21,7 @@ const CoachCarousel = () => {
                       src="/imgs/black-and-white-face-fashion-2530337.jpg"
                       alt="carousel_img"
                     />
-                    <span class="card-title">Name Here</span>
+                    <span class="card-title">NaMe Here</span>
                   </div>
                   <div class="card-content">
                     <i class="amber-text accent-4 fas fa-star" />
