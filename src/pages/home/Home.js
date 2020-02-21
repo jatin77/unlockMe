@@ -36,7 +36,6 @@ class Home extends React.Component {
         <FloatingGetApp />
         {/* Header slider */}
         <HeaderSlides />
-
         {/* carousel */}
         <CoachCarousel />
         {/* book coaching banner */}
@@ -49,6 +48,7 @@ class Home extends React.Component {
         <ChooseUs />
         {/* footer above */}
         <Footer />
+        hi
         <LinkedIn
           response_type="code"
           clientId="817ew6hqc3jaeg"
